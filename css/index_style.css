@@ -1,0 +1,703 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+
+}
+
+.clr {
+    clear: both;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.section1 {
+
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(41, 36, 36, 0.5);
+    border: none;
+    
+}
+.navbar .logoContainer
+{
+    float: left;
+    width:15%;
+} 
+.navbar .logoContainer img
+{
+
+    width: 100%;
+}
+.navbar  ul
+{
+    list-style-type: none;
+    float: right;
+    
+}
+.navbar  ul li
+{
+    display: inline-block;
+    padding:10px
+
+}
+.navbar ul li a
+{
+    font-size:18px;
+    color:white;
+    text-decoration: none;
+}
+.navbar ul li a:hover
+{
+    color:gray
+}
+
+
+.section1 .familyBakery {
+   
+    text-align: center;
+    color: #fff;
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 0;
+
+    
+
+
+}
+
+.section1 .familyBakery .familyBakerycontent
+{
+    padding-top: 40px;
+
+
+}
+
+
+.btns
+{
+    margin-top: 40px;
+}
+.section1 .familyBakery .btns .btn1,.section1 .familyBakery .btns
+.btn2 {
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px 25px;
+    color: white;
+    font-size: 14px;
+}
+
+.section1 .familyBakery .btns .btn1 {
+    border-width: 1px;
+    background-color: #8e7754;
+}
+
+.section1 .familyBakery .btns .btn2 {
+    background-color: transparent;
+    border: solid 1px white;
+
+
+}
+
+.section1 .familyBakery .scrolling a {
+    display: inline-block;
+    border: 1px solid white;
+    width: 50px;
+    height: 30px;
+    transform: rotate(90deg);
+    border-radius: 40%;
+    position: relative;
+
+
+}
+.section1 .familyBakery .scrolling
+{
+    padding-top: 30px;
+  
+
+}
+
+.section1 .scrolling span {
+    display: inline-block;
+    border: 1px solid white;
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position:absolute;
+    top:38%;
+    right: 100%;
+    opacity: 0;
+    animation: upTodown 1.5s 0s normal infinite;
+    box-shadow: 0 0 2px 1px white;
+
+
+}
+@keyframes upTodown
+{
+    0%{right:100%;opacity: 0;}
+    50%{right:38%;opacity: 1;}
+    70%{right: 20%;opacity: 0;}
+    85%{right: 10%;opacity: 0;}
+    100%{right: 0%;opacity: 0;}
+}
+
+.section1 .familyBakery .btn1:hover,
+.section1 .familyBakery .btn2:hover {
+    background-color: white;
+    color: black;
+}
+
+.familyBakery .smallHeading {
+    margin-bottom: auto;
+    font-size: 23px;
+}
+
+.section1 .bigHeading {
+    margin-top: 1px;
+    font-size: 75px;
+    font-weight: normal;
+
+}
+
+.section1 .identifcation {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/* section1 MQ*/
+@media screen and (max-width : 767px){
+    .bigHeading{
+        font-size: 2.3rem !important;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section2 {
+    color: #686868;
+    overflow: auto;
+    width:95%;
+    margin: auto;
+  
+
+}
+
+.section2 .imgContainer {
+
+    width: 50%;
+    float: left;
+    
+
+
+}
+.section2 .imgContainer,.section2 .contentContainer
+{
+    padding:50px
+
+}
+.section2 .contentContainer {
+ 
+    width: 50%;
+    float: left;
+    
+}
+
+.s2_image {
+    width: 100%;
+}
+
+.section2 .s2_heading {
+    margin-bottom: 30px;
+    margin-top: 25px;
+    color: #303030;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.section2 .s2_paragraph {
+    line-height: 25px;
+}
+
+.section2 .contentContainer .list .img {
+    border-radius: 50%;
+    margin-top: 15px;
+
+}
+
+/* section2 media query*/
+
+
+@media screen and (max-width:600px)
+{
+    .section2 .contentContainer,.section2 .imgContainer
+    {
+        width:100%;
+        padding: 0px;
+    }
+    .section2
+    {
+        
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:767px)
+{
+    .section2 .contentContainer,.section2 .imgContainer
+    {
+        width:100%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1010px)
+{
+    .section2 .imgContainer .inner
+        {
+            margin-top: 70px;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+.section3 {
+    background-color: rgb(241, 234, 234);
+    overflow: auto;
+    color: #686868;
+
+
+}
+
+.section3 .inner1
+{
+
+    width: 95%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+
+.section3 .imgContainer img
+{
+    width: 100%;
+}
+
+.section3 .contentContainer , .section3 .imgContainer 
+{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.section3 .contentContainer h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #303030;
+}
+
+.section3 .contentContainer p {
+    line-height: 30px;
+}
+
+/*section3 MQ*/
+@media screen and (max-width:600px)
+{
+    .section3 .contentContainer,.section3 .imgContainer
+    {
+        width:100%;
+        padding: 0;
+    }
+    .section3 .inner1
+    {
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom:40px;
+    }
+    .section3 .contentContainer
+    {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:767px)
+{
+    .section3 .contentContainer,.section3 .imgContainer
+    {
+        width:100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1010px)
+{
+    .section3 .imgContainer .inner
+        {
+            margin-top: 70px;
+        }
+
+}
+
+
+
+
+.section4 {
+    background-color: white;
+    width:95%;
+    margin: auto;
+    overflow: auto;
+    color: #686868;
+    padding: 20px;
+}
+
+.section4 .bakings h2 {
+    color: #303030;
+    margin-bottom: 15px;
+}
+
+.section4 .bakings {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.section4 .bake {
+    width: 33.3333%;
+    text-align: center;
+    float: left;
+    padding:30px;
+
+
+}
+
+
+
+
+.section4 .bake img {
+    width: 100%;
+}
+
+.section4 .bake h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #303030
+}
+
+.section4 .bake p {
+    line-height: 25px;
+}
+/*section4 MQ*/
+@media screen and (max-width:600px) {
+    .section4
+    {
+       padding: 0;
+       padding-top: 30px;
+       padding-bottom: 30px;
+    }
+    .section4 .bake {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:767px)
+{
+    .section4 .bake
+    {
+        width:100%;
+    }
+
+}
+
+
+.section5 {
+    background-color: rgb(241, 234, 234);
+    color: #686868;
+
+}
+
+.section5 .inner1
+{
+    width: 95%;
+    margin: auto;
+    padding:40px 20px;
+}
+
+.section5 .contentContainer ul img {
+    border-radius: 50%;
+
+}
+
+.section5 .contentContainer ul {
+    list-style-type: none;
+}
+
+.section5 .mapContainer, .section5 .contentContainer 
+{
+
+    width: 50%;
+    float: left;
+    padding: 20px;
+    
+}
+
+.section5 .mapContainer iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.section5 .contentContainer h4 {
+
+    font-weight: 400px;
+    font-size: 27px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    color: #303030
+}
+
+.section5 .contentContainer p {
+    line-height: 30px;
+}
+
+.section5 .contentContainer h5 {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.section5 .contentContainer .list li {
+    line-height: 50px;
+}
+
+/*section5 MQ*/
+@media screen and (max-width:600px)
+{
+    .section5 .inner1
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+   
+    .section5 .contentContainer , .section5 .mapContainer
+    {
+        width:100%;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width:600px) and (max-width:767px)
+{
+    .section5 .contentContainer , .section5 .mapContainer
+    {
+        width:100%;
+    }
+
+}
+
+
+
+
+.section6 {
+    background-color: #403d38;
+
+    overflow: auto;
+    color: #969696
+}
+
+.section6 .inner
+{
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+  
+}
+
+.section6 h4 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 18px;
+}
+.section6 .about p {
+    line-height: 22px;
+}
+
+
+.section6 .about,.section6 .contact, .section6 .special,.section6 .openHour
+{
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+
+
+.section6 .contact {
+
+    
+    background-image: url(images/contact-details-map.png);
+    background-size: 100% 100%;
+    
+}
+
+
+
+.section6 ul {
+    list-style-type: none;
+    line-height: 35px;
+}
+
+
+.section6 li {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.05);
+}
+
+.section6 a {
+    text-decoration: none;
+    color: #969696
+}
+
+.section6 a:hover {
+    color: #fff;
+}
+/*section6 MQ*/
+@media screen and (max-width:600px)
+{
+  .section6 .inner
+  {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+  } 
+  .section6 .about,.section6 .contact, .section6 .special,.section6 .openHour
+  {
+      width: 100%;
+      padding: 0;
+      padding-bottom: 30px;
+  }
+
+}
+
+@media screen and (min-width:600px) and (max-width:767px)
+{
+    .section6 .about,.section6 .contact, .section6 .special,.section6 .openHour
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1010px)
+{
+    .section6 .about,.section6 .contact, .section6 .special,.section6 .openHour
+    {
+        width: 50%;
+    } 
+}
+
+
+
+
+.section7 {
+    background-color: #353330;
+}
+
+.section7 .imgContainer {
+
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+}
+
+.section7 p {
+
+    text-align: center;
+    padding-top: 30px;
+    color: #797979;
+}
+
+.section7 .icons {
+
+
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+.section7 .icons a {
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+
+
+
+}
+
+.section7 .icons a img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
